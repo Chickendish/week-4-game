@@ -3,9 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>crystalCollectorGame</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
+<!-- background image full screen -->
+<img src="assets/images/caveBackground.jpeg" class="bg">
+<div class="container">
+	<div class="row" class="header">
+		<div class="col-md-12">
+			<p>Crystals Collector!</p>
+		</div>
+	</div>
+	<div class="row" class="instructions">
+		<div class="col-md-12">
+			<p>Instructions for the game</p>
+		</div>
+	</div>
+	<div class="row" class="scoring">
+		<div class="col-md-9">
+			<span id="targetNumber">0</span>
+		</div>
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<p id="wins">Wins:</p>
+					<p id="losses">Losses:</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" class="gamePieces">
+		<div class="col-md-3">
+			<img src="assets/images/amethyst.jpeg" class="gamePiece" id="crystal-1">#1
+		</div>
+		<div class="col-md-3">
+			<img src="assets/images/ruby.jpeg" class="gamePiece" id="crystal-2">#1
+		</div>
+		<div class="col-md-3">
+			<img src="assets/images/sapphire.jpeg" class="gamePiece" id="crystal-3">#1
+		</div>
+		<div class="col-md-3">
+			<img src="assets/images/yellowCrystal.jpeg" class="gamePiece" id="crystal-4">#1
+		</div>
+	</div>
+</div>
 <!-- jquery script from google cdn -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- game javascript -->
