@@ -16,3 +16,11 @@ img.bg {
 img.gamePiece {
   max-height: 150px;
 }
+
+.panel-body {
+  background-color: LightBlue;
+}
+p {
+  font-size: 20px;
+  font-style: bold;
+}
