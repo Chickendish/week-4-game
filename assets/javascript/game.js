@@ -1,20 +1,12 @@
 window.onload = function() {
 
-
-var targetNumber = 0;
-var crystalsArray = [];
-var crystal;
-var crystalsTotal = 0;
+// var crystalsArray = [];
+// var crystal;
+// var crystalsTotal = 0;
 var wins = 0;
 var losses = 0;
-
-// put 4 numbers into an array to accessed on crystal clicks
-for (i = 0; i < 4; i++) {
-	var crystal = Math.floor(Math.random() * 12+1);
-		crystalsArray.push(crystal);
-	};
-
-console.log(crystalsArray);
+var crystalsArray = [];
+var crystalsTotal = 0;
 
 function startGame() {
 	//generate a target number between 19 and 120
@@ -22,6 +14,15 @@ function startGame() {
 	$("#targetNumber").html(targetNumber);
 	console.log(targetNumber);
 	console.log("here's the target number");
+	// // put 4 numbers into an array to be accessed on crystal clicks
+	// var crystalsArray = [];
+	 for (i = 0; i < 4; i++) {
+	 var crystal = Math.floor(Math.random() * 12+1);
+	 	crystalsArray.push(crystal);
+	// 	return crystalsArray;
+	 	console.log(crystalsArray);
+	 };
+
 };
  
 startGame();
@@ -43,8 +44,12 @@ function checkScore() {
 function resetGame() {
 	targetNumber = 0;
 	crystalsTotal = 0;
+	crystalsArray = [];
+	$("#currentScore").html(crystalsTotal);
 	startGame();
 }	
+
+ // this should probably be one function
 
 $("#crystal-1").on("click", function() {
 	var crystalOne = crystalsArray[0];
